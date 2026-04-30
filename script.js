@@ -71,7 +71,7 @@ leadForm.addEventListener("submit", (event) => {
 const siteHeader = document.querySelector(".site-header");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 80) {
+  if (window.scrollY > 0) {
     siteHeader.classList.add("scrolled");
   } else {
     siteHeader.classList.remove("scrolled");

@@ -60,6 +60,8 @@
     -webkit-backdrop-filter: none;
     border-bottom: none;
     transition: all .35s ease;
+    opacity: 0;
+    pointer-events: none;
   }
 
   /* ЛОГО видно сразу */
@@ -79,6 +81,8 @@
 
   /* После scroll */
   .site-header.scrolled {
+    opacity: 1;
+    pointer-events: auto;
     background: rgba(251, 250, 247, 0.88);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid rgba(221, 213, 202, 0.35);
