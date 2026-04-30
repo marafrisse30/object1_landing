@@ -60,8 +60,6 @@
     -webkit-backdrop-filter: none;
     border-bottom: none;
     transition: all .35s ease;
-    opacity: 0;
-    pointer-events: none;
   }
 
   /* ЛОГО видно сразу */
