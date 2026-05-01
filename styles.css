@@ -214,9 +214,9 @@
   @media(max-width:700px) {
 
   .hero {
-      height: 78vh;
-      min-height: 500px;
-      max-height: 620px;
+      height: 100vh;
+      min-height: 100vh;
+      max-height: none;
     }
 
   .hero-logo {
