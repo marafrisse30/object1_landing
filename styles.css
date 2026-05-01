@@ -55,8 +55,6 @@
     left: 0;
     width: 100%;
     z-index: 100;
-    padding-top: constant(safe-area-inset-top);
-    padding-top: env(safe-area-inset-top);
     background: transparent;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
@@ -96,7 +94,7 @@
   }
 
   .header-inner {
-    min-height: calc(78px + env(safe-area-inset-top));
+    min-height: 78px;
     display: flex;
     align-items: center;
     justify-content: space-between;
