@@ -6,6 +6,7 @@ const closeFormButtons = document.querySelectorAll(".close-form");
 
 menuBtn.addEventListener("click", () => {
   mobileNav.classList.toggle("active");
+  siteHeader.classList.toggle("menu-open");
 });
 
 openFormButtons.forEach((button) => {

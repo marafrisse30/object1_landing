@@ -77,8 +77,9 @@
     transition: opacity .35s ease;
   }
 
-  /* После scroll */
-  .site-header.scrolled {
+  /* После scroll и при открытом меню — одинаковый стиль */
+  .site-header.scrolled,
+  .site-header.menu-open {
     opacity: 1;
     pointer-events: auto;
     background: rgba(251, 250, 247, 0.88);
@@ -88,7 +89,10 @@
 
   .site-header.scrolled .desktop-nav,
   .site-header.scrolled .btn-small,
-  .site-header.scrolled .menu-btn {
+  .site-header.scrolled .menu-btn,
+  .site-header.menu-open .desktop-nav,
+  .site-header.menu-open .btn-small,
+  .site-header.menu-open .menu-btn {
     opacity: 1;
     pointer-events: auto;
   }
@@ -758,6 +762,8 @@
 
     .menu-btn {
       display: block;
+      opacity: 1;
+      pointer-events: auto;
     }
 
     .mobile-nav.active {
